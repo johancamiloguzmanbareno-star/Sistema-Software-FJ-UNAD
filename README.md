@@ -25,3 +25,6 @@ Sistema_Software_FJ/
 │   └── eventos_fj.log          # Registro de eventos y errores del sistema
 ├── main.py                     # Simulación de 13 operaciones completas
 └── README.md
+
+## Pruebas y Registro
+Se ejecutaron 13 operaciones completas en `main.py` validando registros, servicios, reservas, cancelaciones y excepciones con registro en `logs/eventos_fj.log`.
