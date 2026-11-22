@@ -28,3 +28,5 @@ Sistema_Software_FJ/
 
 ## Pruebas y Registro
 Se ejecutaron 13 operaciones completas en `main.py` validando registros, servicios, reservas, cancelaciones y excepciones con registro en `logs/eventos_fj.log`.
+## Integrantes
+- **Johan Camilo Guzmán Bareño** – Desarrollo del módulo de auditoría y manejo de excepciones encadenadas.
