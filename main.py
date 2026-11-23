@@ -1,15 +1,23 @@
 import modulo_auditoria
+import logging
 
 try:
     from controladores.gestor_fj import SistemaSoftwareFJ
     from modelos.servicio import Servicio
+    MODULOS_DISPONIBLES = True
 except ImportError as e:
-    print(f"Aviso: Módulos base no encontrados en el repositorio ({e}). Ejecutando auditoría...")
-
+    MODULOS_DISPONIBLES = False
+    logging.error(f"Dependencia faltante en repositorio base: {e}")
+    print(f"Aviso: Módulos base no encontrados ({e}). Ejecutando módulo de auditoría...")
 
 def ejecutar_pruebas():
+    if not MODULOS_DISPONIBLES:
+        modulo_auditoria.ejecutar_pruebas_auditoria()
+        return
+
     app = SistemaSoftwareFJ()
     print("\n--- INICIANDO PRUEBAS DEL SISTEMA SOFTWARE FJ ---\n")
+
 
     # Operación 1: Registro válido de cliente
     app.agregar_cliente("C001", "Valentina Gómez", "valentina.gomez@correo.com", "3104455667")
