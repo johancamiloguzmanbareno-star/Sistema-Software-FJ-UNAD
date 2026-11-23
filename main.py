@@ -1,6 +1,10 @@
 import modulo_auditoria
-from controladores.gestor_fj import SistemaSoftwareFJ
-from modelos.servicio import AlquilerEquipo, AsesoriaEspecializada, ReservaSala
+
+try:
+    from controladores.gestor_fj import SistemaSoftwareFJ
+    from modelos.servicio import Servicio
+except ImportError as e:
+    print(f"Aviso: Módulos base no encontrados en el repositorio ({e}). Ejecutando auditoría...")
 
 
 def ejecutar_pruebas():
