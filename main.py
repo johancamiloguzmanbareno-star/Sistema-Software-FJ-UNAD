@@ -75,4 +75,4 @@ def ejecutar_pruebas():
 
 if __name__ == "__main__":
     ejecutar_pruebas()
-    modulo_auditoria.ejecutar_pruebas_auditoria
+    modulo_auditoria.ejecutar_pruebas_auditoria()
