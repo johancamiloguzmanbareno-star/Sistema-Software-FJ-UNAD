@@ -1,5 +1,5 @@
 # ==============================================================================
-# Modulo de Auditoría, Validaciones Avanzadas y Simulaciones de Estrés
+# Modulo de Auditoría, Validaciones Avanzadas y Simulaciones de Estres
 # Autor: Johan Camilo Guzmán Bareño
 # Curso: Programación (213023) - Fase 4 (Software FJ)
 # ==============================================================================
