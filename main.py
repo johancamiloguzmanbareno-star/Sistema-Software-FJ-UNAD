@@ -1,3 +1,4 @@
+import modulo_auditoria
 from controladores.gestor_fj import SistemaSoftwareFJ
 from modelos.servicio import AlquilerEquipo, AsesoriaEspecializada, ReservaSala
 
@@ -62,3 +63,4 @@ def ejecutar_pruebas():
 
 if __name__ == "__main__":
     ejecutar_pruebas()
+    modulo_auditoria.ejecutar_pruebas_auditoria
